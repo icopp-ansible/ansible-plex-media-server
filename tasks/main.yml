@@ -1,0 +1,5 @@
+---
+- name: Install Plex Media Server via Homebrew Cask
+  homebrew_cask:
+    name: plex-media-server
+  when: ansible_os_family == "Darwin"
